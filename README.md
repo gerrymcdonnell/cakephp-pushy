@@ -57,7 +57,7 @@ CREATE TABLE `pushymenus_items` (
   `created` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-5. Add items to these tables;
+5) Add items to these tables;
 you can access the menu controller at;
 
 http://localhost/[yourcakefolder]/gerrymcdonnell/pushy/pushymenus
