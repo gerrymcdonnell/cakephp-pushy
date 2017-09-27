@@ -18,16 +18,8 @@ Plugin::load('Gerrymcdonnell/Pushy',['routes' => true]);
 
 
 2) Add to your default layout just after the start of the body tag;
-```
-	<?php			
-		//*************************************************************************************	
-		//pushy menu
-		//*************************************************************************************		
-		
-		//pass title of menu to element
-		echo $this->element('Gerrymcdonnell/Pushy.newpushymenu',['pushymenutitle'=>'Pushy Menu']);
-		//*************************************************************************************	
-	?>
+```//pass title of menu to element
+echo $this->element('Gerrymcdonnell/Pushy.newpushymenu',['pushymenutitle'=>'Pushy Menu']);
 ```
 
 3) Add Jquery library to your default template;
