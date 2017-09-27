@@ -30,6 +30,9 @@ echo $this->Html->script('https://code.jquery.com/jquery-1.12.4.min.js');
 4) create the following two database tables;
 
 ```
+-- Table structure for table `pushymenus`
+--
+
 CREATE TABLE `pushymenus` (
   `id` int(11) NOT NULL,
   `title` varchar(100) NOT NULL,
@@ -38,6 +41,12 @@ CREATE TABLE `pushymenus` (
   `plugin` varchar(50) NOT NULL DEFAULT 'false',
   `created` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pushymenus_items`
+--
 
 CREATE TABLE `pushymenus_items` (
   `id` int(11) NOT NULL,
@@ -48,6 +57,37 @@ CREATE TABLE `pushymenus_items` (
   `plugin` varchar(50) NOT NULL DEFAULT 'false',
   `created` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `pushymenus`
+--
+ALTER TABLE `pushymenus`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pushymenus_items`
+--
+ALTER TABLE `pushymenus_items`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `pushymenus`
+--
+ALTER TABLE `pushymenus`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `pushymenus_items`
+--
+ALTER TABLE `pushymenus_items`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 ```
 
 5) Add items to these tables;
