@@ -12,9 +12,9 @@ composer require gerrymcdonnell/pushy:dev-master
 
 ##Instructions:
 1) Add to your bootstrap file;
-
+```
 Plugin::load('Gerrymcdonnell/Pushy',['routes' => true]);
-
+```
 
 
 2) Add to your default layout just after the start of the body tag;
@@ -37,7 +37,7 @@ echo $this->Html->script('https://code.jquery.com/jquery-1.12.4.min.js');
 
 4) create the following two database tables;
 
-
+```
 CREATE TABLE `pushymenus` (
   `id` int(11) NOT NULL,
   `title` varchar(100) NOT NULL,
@@ -46,8 +46,6 @@ CREATE TABLE `pushymenus` (
   `plugin` varchar(50) NOT NULL DEFAULT 'false',
   `created` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-
 
 CREATE TABLE `pushymenus_items` (
   `id` int(11) NOT NULL,
@@ -58,6 +56,7 @@ CREATE TABLE `pushymenus_items` (
   `plugin` varchar(50) NOT NULL DEFAULT 'false',
   `created` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
 
 5) Add items to these tables;
 you can access the menu controller at;
