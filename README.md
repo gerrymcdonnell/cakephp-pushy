@@ -16,8 +16,9 @@ composer require gerrymcdonnell/pushy:dev-master
 Plugin::load('Gerrymcdonnell/Pushy',['routes' => true]);
 
 
-2) Add to your default layout just after the start of the body tag;
 
+2) Add to your default layout just after the start of the body tag;
+```
 	<?php			
 		//*************************************************************************************	
 		//pushy menu
@@ -27,6 +28,7 @@ Plugin::load('Gerrymcdonnell/Pushy',['routes' => true]);
 		echo $this->element('Gerrymcdonnell/Pushy.newpushymenu',['pushymenutitle'=>'Pushy Menu']);
 		//*************************************************************************************	
 	?>
+```
 
 3) Add Jquery library to your default template;
  eg 
